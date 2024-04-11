@@ -1,0 +1,41 @@
+/* Home.css */
+
+.home-container {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  padding: 3rem;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px; /* Increased spacing between cards */
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px; /* Increased padding */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.movie-card h3 {
+  margin: 15px 0; /* Increased margin */
+}
+
+.movie-card p {
+  font-size: 14px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Adjusted spacing for smaller screens */
+  }
+}

@@ -1,0 +1,21 @@
+.hover-card{
+    border-style: solid;
+    border-color: rgb(148, 141, 141);
+    width: 40vw;
+    height: 40vh;
+    background-image: linear-gradient(rgba(10, 10, 10, 10), rgba(7, 4, 4, 0.5)),
+    url("https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpgbcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg");
+    border-radius: 4px;
+
+
+    img{
+        height: 100%;
+        width: 35%;
+    }
+
+    p{
+        line-height: 20px;
+        font-weight: 300;
+        
+    }
+}
