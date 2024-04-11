@@ -9,3 +9,13 @@
     border-radius: 20px;
     height: 100%;
   }
+@media screen and (max-width: 800px) {
+  .error-image{
+    height: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .error-image{
+    height: 50%;
+  }
+}

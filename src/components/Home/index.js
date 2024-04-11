@@ -57,7 +57,6 @@ const Home = () => {
       <h2 style={{ color: "white" }}>Popular Movies</h2>
       <div className="movie-list">
         {movies.map((movie) => (
-          // <Link to={`/movie/${movie.id}`} key={movie.id} className="movie-card">
           <Link to={`/movie/${movie.id}`} key={movie.id}>
             {isMobile ? (
               <MovieCardMobile movie={movie} />
