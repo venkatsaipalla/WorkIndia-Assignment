@@ -1,75 +1,219 @@
-.single-movie-container {
-  display: flex;
-  background-color: #808080;
-  padding: 20px;
-}
-
-.top {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.movie-details {
-  width: 45%;
-}
-
-.over {
-  width: 100%;
-}
-
-.movie-details img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.im {
-  width: 45%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cast-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  flex-direction:row;
-}
-
-.cast-image {
-  width: 200px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 8px;
+.bg-container {
   display: flex;
   flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* width: 100vw; */
+  padding: 2rem;
+  /* justify-content: center; */
+}
+.single-movie-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  /* max-width: 1000px; */
+  /* justify-content: center; */
+}
+.moviePoster {
+  border-radius: 10px;
+  height: 350px;
+}
+.movieDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.5rem; */
+  max-width: 500px;
+}
+.Movietitle {
+  font-size: xx-large;
+  color: white;
+}
+.rating {
+  color: white;
+}
+.castContainer {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.castTitle {
+  color: white;
+  font-size: x-large;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* height: 250px; */
+  /* Center slide text vertically */
+  width: 11rem !important;
+  height: 11.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
   align-items: center;
 }
 
-.cast-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
 }
-
-.cast-info {
-  padding: 10px;
-  background-color: #fff;
-  width: 100%;
-  border-radius: 0 0 8px 8px;
+.all-cast-div {
+  display: flex;
+  flex-direction: row;
 }
-
-.cast-name,
+.cast-div {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 15rem; */
+  background-color: transparent;
+}
+.cast-image {
+  border-radius: 15rem;
+  box-shadow: rgb(86, 86, 86) 3px 2px 5px;
+  width: 7rem;
+  height: 7rem;
+  background-size: cover;
+}
+.cast-name {
+  color: whitesmoke;
+  font-size: 18px;
+  margin: 0px;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  white-space: nowrap;
+}
 .cast-character {
+  font-size: 16px;
+  color: gray;
   margin: 0;
   text-align: center;
+  white-space: nowrap;
 }
-.whole{
-  display:flex;
-  flex-direction:column;
+
+.ratingDiv {
+  background-color: #333333;
+  cursor: pointer;
+  border-radius: 8px;
+  max-width: 446px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ratingStats {
+  max-width: 70%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.ratingText {
+  letter-spacing: 0.2px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0px 8px;
+}
+.totoVotes {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 24px; */
+  margin: 0;
+  letter-spacing: 0.2px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+.rateNowButton {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  margin-left: 4px;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  color: rgb(26, 26, 26);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.rateNowButton:hover {
+  background-color: grey;
+  color: white;
+}
+.movieStats {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.statsinfoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+  padding: 4px 12px;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+.budget {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 760px) {
+  .bg-container {
+    padding: 0;
+  }
+  .single-movie-container {
+    padding: 1rem;
+  }
+  .Movietitle {
+    font-size: x-large;
+  }
+  .swiper-slide {
+    width: 7rem !important;
+  }
+  .cast-image {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .totoVotes {
+    font-size: 14px;
+  }
+  .rateNowButton {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768) {
+  .bg-container {
+    height: 100vh;
+  }
 }

@@ -4,7 +4,7 @@ import "./index.css";
 import Loader from "../Loader/Loader";
 import { PaginationComponent } from "../Pagination/index.js";
 import { Link } from "react-router-dom";
-import MovieCard from "../MovieCard/index.js";
+import { MovieCard, MovieCardMobile } from "../MovieCard/index.js";
 
 const ApiKey = "82703bde347abd1cddce530db029c8ef";
 const BaseUrl = "https://api.themoviedb.org/3";

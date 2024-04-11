@@ -9,8 +9,9 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const deviceSize = useDeviceSize();
 
-  const isMobile = deviceSize === "xs";
-  
+  const isMobile =
+    deviceSize === "sm" ? true : deviceSize === "xs" ? true : false;
+
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim() !== "") {
@@ -42,9 +43,7 @@ export const Navbar = () => {
           }}
         />
       ) : (
-        <DesktopNavbar
-          {...{ searchQuery, setSearchQuery, handleSearch, searchQuery }}
-        />
+        <DesktopNavbar {...{ searchQuery, setSearchQuery, handleSearch }} />
       )}
     </nav>
   );

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const breakpoints = {
 	480: 'xs', // mobile
-	770: 'sm', // tablet
+	768: 'sm', // tablet
 	1024: 'md', // big tablet
 	1280: 'lg', // small pc
 	1440: 'xl', // pc
@@ -28,8 +28,8 @@ const useDeviceSize = () => {
 		if (0 < width && width <= 480) {
 			setBreakPoint(breakpoints[480]);
 		}
-		if (480 < width && width <= 770) {
-			setBreakPoint(breakpoints[770]);
+		if (480 < width && width <= 768) {
+			setBreakPoint(breakpoints[768]);
 		}
 		if (770 < width && width <= 1024) {
 			setBreakPoint(breakpoints[1024]);

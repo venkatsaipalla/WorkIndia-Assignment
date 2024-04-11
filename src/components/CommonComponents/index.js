@@ -5,7 +5,7 @@ export const ErrorPage = () => {
   return (
     <div className="error-container">
       <img
-        src='../../../public/WhatsAppVideo2024-04-10at16.09.27_0f5ab656-ezgif.com-video-to-gif-converter.gif'
+        src="https://res.cloudinary.com/dxejhgtqt/image/upload/v1712819259/bvu69mtyhvjoyoolwad9.gif"
         alt="Oops Something went wrong!..."
         className="error-image"
       />

@@ -11,10 +11,10 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ height: "100vh", width: "100vw", overflowX: "hidden" }}>
         <Navbar />
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/top-rated" element={<TopRated />} />
